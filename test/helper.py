@@ -12,9 +12,7 @@ import_and_load_builtins()
 # Set up a Mathics session with definitions.
 # For consistency set the character encoding ASCII which is
 # the lowest common denominator available on all systems.
-session = MathicsSession(
-    character_encoding="ASCII"
-)
+session = MathicsSession(character_encoding="ASCII")
 
 
 def reset_session(add_builtin=True, catch_interrupt=False):
@@ -115,7 +113,7 @@ def check_evaluation(
         assert (
             expected_len == got_len
         ), f"expected {expected_len}; got {got_len}. Messages: {outs}"
-        for (out, msg) in zip(outs, msgs):
+        for out, msg in zip(outs, msgs):
             if out != msg:
                 print(f"out:<<{out}>>")
                 print(" and ")

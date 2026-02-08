@@ -19,6 +19,7 @@ from pymathics.graph.format import png_format_graph, svg_format_graph
 
 no_doc = True
 
+
 class GraphBox(BoxElementMixin):
     def __init__(self, G, **options):
         self.G = G

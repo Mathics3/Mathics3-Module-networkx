@@ -1,11 +1,10 @@
 [build-system]
 requires = [
 	"setuptools", # CVE-2024-38335 recommends this
-        "Mathics3>9.0.0",
+        "mathics-core >= 9.0.1",
         "Mathics3-Module-Base",
         "networkx>=3.0.0",
         "matplotlib",
-        "Mathics3-Module-Base",
 ]
 build-backend = "setuptools.build_meta"
 
