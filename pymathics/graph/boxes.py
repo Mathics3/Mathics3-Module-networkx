@@ -8,12 +8,9 @@ GraphBox.
 
 import base64
 import tempfile
-
-
 from typing import Tuple
 
 from mathics.core.element import BaseElement, BoxElementMixin
-
 
 from pymathics.graph.format import png_format_graph, svg_format_graph
 
@@ -25,9 +22,7 @@ class GraphBox(BoxElementMixin):
         self.G = G
         self.options = options
 
-    def to_b64text(
-        self, **options
-    ) -> Tuple[bytes, Tuple[int, int]]:
+    def to_b64text(self, **options) -> Tuple[bytes, Tuple[int, int]]:
         """
         Produces a base64 png representation and a tuple with the size of the pillow image
         associated to the object.
