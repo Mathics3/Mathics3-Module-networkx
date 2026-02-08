@@ -115,7 +115,6 @@ def get_png_graph() -> BytesIO:
 def hierarchy_pos(
     G, root=None, width=1.0, vert_gap=0.2, vert_loc=0, leaf_vs_root_factor=0.5
 ):
-
     """Position nodes in tree layout. The root is at the top.
 
     Based on Joel's answer at https://stackoverflow.com/a/29597209/2966723,
