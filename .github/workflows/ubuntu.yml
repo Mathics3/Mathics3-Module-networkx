@@ -1,4 +1,4 @@
-name: Mathic3 Module networkx (ubuntu)
+name: Mathics3 Module networkx (ubuntu)
 
 on:
   push:
