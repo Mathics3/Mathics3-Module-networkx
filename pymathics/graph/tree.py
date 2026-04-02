@@ -3,6 +3,7 @@ Trees
 """
 
 import networkx as nx
+from mathics.core.builtin import AtomBuiltin
 from mathics.core.evaluation import Evaluation
 from mathics.core.symbols import Atom, SymbolConstant
 
@@ -17,8 +18,6 @@ DEFAULT_TREE_OPTIONS = {
     **DEFAULT_GRAPH_OPTIONS,
     **{"GraphLayout": '"tree"'},
 }
-
-from mathics.core.builtin import AtomBuiltin
 
 
 # FIXME: do we need to have TreeGraphAtom and TreeGraph?
