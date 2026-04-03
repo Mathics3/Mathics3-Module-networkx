@@ -24,11 +24,15 @@ jobs:
         python -m pip install pytest
         python -m pip install Mathics3-Module-Base
         # Go over and comment out stuff when next Mathics core and Mathics-scanner are released
-        # python -m pip install -e git+https://github.com/Mathics3/mathics-scanner#egg=Mathics-Scanner[full]
+        git clone --depth 1 https://github.com/Mathics3/Mathics3-scanner.git
+        cd Mathics3-scanner/
+        pip install -e .
+        bash -x admin-tools/make-JSON-tables.sh
+        cd ..
         # Until the next mathics-core release
         git clone https://github.com/Mathics3/mathics-core
         (cd mathics-core && pip3 install -e .[full])
-        (cd mathics-core && bash ./admin-tools/make-JSON-tables.sh)
+        (cd mathics-core && bash -x ./admin-tools/make-JSON-tables.sh)
 
     - name: install Mathics3 Module networkx
       run: |
