@@ -38,9 +38,9 @@ class TreeGraphAtom(AtomBuiltin):
      = -Graph-
 
     If the $edges$ does not match with a tree-like pattern, the evaluation fails:
-    >> TreeGraph[{1->2, 2->3, 3->1}]
+    >> TreeGraph[{1 ⇾ 2, 2 ⇾ 3, 3 ⇾ 1}]
      : Graph is not a tree.
-     = TreeGraph[{1 -> 2, 2 -> 3, 3 -> 1}]
+     = TreeGraph[{1 ⇾ 2, 2 ⇾ 3, 3 ⇾ 1}]
     """
 
     options = DEFAULT_TREE_OPTIONS

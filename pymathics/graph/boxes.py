@@ -48,7 +48,8 @@ class GraphBox(BoxElementMixin):
         a LaTeX command for including it.
         """
 
-        data, size = self.to_png(elements, **options)
+        data, size = self.to_png(**options)
+
         res = 100  # pixels/cm
         width_str, height_str = (str(n / res).strip() for n in size)
         head = rf"\includegraphics[width={width_str}cm,height={height_str}cm]"
