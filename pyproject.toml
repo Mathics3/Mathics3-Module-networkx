@@ -1,7 +1,7 @@
 [build-system]
 requires = [
-	"setuptools", # CVE-2024-38335 recommends this
-        "mathics-core >= 9.0.1",
+	"setuptools",
+        "mathics-core > 9.0.1",
         "Mathics3-Module-Base",
         "networkx>=3.0.0",
         "matplotlib",
