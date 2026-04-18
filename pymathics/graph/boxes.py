@@ -10,7 +10,7 @@ import base64
 import tempfile
 from typing import Tuple
 
-from mathics.core.element import BaseElement, BoxElementMixin
+from mathics.core.element import BoxElementMixin
 
 from pymathics.graph.format import png_format_graph, svg_format_graph
 
