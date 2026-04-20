@@ -5,7 +5,7 @@
 Example Session
 ---------------
 
-::
+.. code-block:: mathematica
 
    $ mathicsscript
    Mathicscript: 10.0.0, Mathics3 10.0.0
@@ -36,9 +36,9 @@ Screenshots
 
 |screenshot|
 
-The above is the is the matplotlib graph for ``BinomialTree[3]`` in the session above.
+The above is the matplotlib graph for ``BinomialTree[3]`` in the session above.
 
-See the `screenshot directory <https://github.com/Mathics3/pymathics-graph/tree/master/screenshots>`_ the other graphs.
+See the `screenshot directory <https://github.com/Mathics3/Mathics3-Module-networkx/tree/master/screenshots>`_ the other graphs.
 
 Installation
 -------------
@@ -47,7 +47,7 @@ From pip:
 
 ::
 
-   $ pip install mathics3-graph
+   $ pip install Mathics3-Module-networkx
 
 From git:
 
@@ -58,13 +58,13 @@ From git:
 Note:
 -----
 
-Currently this works well in `mathicsscript` but not in the Django interface, although graphs are created in a temporary directory, e.g. ``/tmp/``.
+Currently, this works well in `mathicsscript` but not in the Django interface, although graphs are created in a temporary directory, e.g., ``/tmp/``.
 
 
-.. |screenshot| image:: https://github.com/Mathics3/pymathics-graph/blob/master/screenshots/BinomialTree-3.png
-.. |Latest Version| image:: https://badge.fury.io/py/pymathics-graph.svg
-		 :target: https://badge.fury.io/py/pymathics-graph
-.. |Pypi Installs| image:: https://pepy.tech/badge/pymathics-graph
-.. |Supported Python Versions| image:: https://img.shields.io/pypi/pyversions/pymathics-graph.svg
-.. |Packaging status| image:: https://repology.org/badge/vertical-allrepos/pymathics-graph.svg
-			    :target: https://repology.org/project/pymathics-graph/versions
+.. |screenshot| image:: https://github.com/Mathics3/Mathics3-Module-networkx/blob/master/screenshots/BinomialTree-3.png
+.. |Latest Version| image:: https://badge.fury.io/py/Mathics3-Module-networkx.svg
+		 :target: https://badge.fury.io/py/Mathics3-module-networkx
+.. |PyPI Installs| image:: https://pepy.tech/badge/Mathics3-Module-networkx
+.. |Supported Python Versions| image:: https://img.shields.io/pypi/pyversions/Mathics3-Moudle-networkx.svg
+.. |Packaging status| image:: https://repology.org/badge/vertical-allrepos/Mathics3-module-networkx.svg
+			    :target: https://repology.org/project/Mathics3-Module-networkx-/versions
