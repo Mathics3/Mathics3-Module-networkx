@@ -58,4 +58,4 @@ packages = [
 ]
 
 [tool.setuptools.dynamic]
-version = {attr = "pymathics.graph.__version__"}
+version = {attr = "pymathics.graph.version.__version__"}

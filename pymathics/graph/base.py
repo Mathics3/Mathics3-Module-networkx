@@ -251,7 +251,7 @@ def is_connected(G):
 
 
 def _edge_weights(options):
-    expr = options.get("Pymathics`EdgeWeight")
+    expr = options.get("EdgeWeight")
     if expr is None:
         return []
     if not expr.has_form("List", None):

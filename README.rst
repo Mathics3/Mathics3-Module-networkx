@@ -5,22 +5,25 @@
 Example Session
 ---------------
 
-::
+.. code-block:: mathematica
 
    $ mathicsscript
-   Mathicscript: 5.0.0, Mathics 6.0.0
-   on CPython 3.10.4 (main, Jun 29 2022, 12:14:53) [GCC 11.2.0]
-   using SymPy 1.9, mpmath 1.2.1, numpy 1.21.5
-   matplotlib 3.5.2,
-   Asymptote version 2.81
+   Mathicscript: 10.0.0, Mathics3 10.0.0
+   on CPython 3.14.3 (main, Mar 30 2026, 06:42:16) [GCC 13.3.0]
 
-   Copyright (C) 2011-2023 The Mathics3 Team.
+   Using:
+   SymPy 1.13.3, mpmath 1.3.0, numpy 2.4.4
+   cython 3.2.4, matplotlib 3.10.8,
+   Asymptote version 2.95
+
+   Copyright (C) 2011-2026 The Mathics3 Team.
    This program comes with ABSOLUTELY NO WARRANTY.
    This is free software, and you are welcome to redistribute it
    under certain conditions.
    See the documentation for the full license.
 
-   Quit by pressing CONTROL-D
+   Quit by evaluating Quit[] or by pressing CONTROL-D.
+
 
    In[1]:= LoadModule["pymathics.graph"]
    Out[1]= pymathics.graph
@@ -33,9 +36,9 @@ Screenshots
 
 |screenshot|
 
-The above is the is the matplotlib graph for ``BinomialTree[3]`` in the session above.
+The above is the matplotlib graph for ``BinomialTree[3]`` in the session above.
 
-See the `screenshot directory <https://github.com/Mathics3/pymathics-graph/tree/master/screenshots>`_ the other graphs.
+See the `screenshot directory <https://github.com/Mathics3/Mathics3-Module-networkx/tree/master/screenshots>`_ the other graphs.
 
 Installation
 -------------
@@ -44,7 +47,7 @@ From pip:
 
 ::
 
-   $ pip install mathics3-graph
+   $ pip install Mathics3-Module-networkx
 
 From git:
 
@@ -55,13 +58,13 @@ From git:
 Note:
 -----
 
-Currently this works well in `mathicsscript` but not in the Django interface, although graphs are created in a temporary directory, e.g. ``/tmp/``.
+Currently, this works well in `mathicsscript` but not in the Django interface, although graphs are created in a temporary directory, e.g., ``/tmp/``.
 
 
-.. |screenshot| image:: https://github.com/Mathics3/pymathics-graph/blob/master/screenshots/BinomialTree-3.png
-.. |Latest Version| image:: https://badge.fury.io/py/pymathics-graph.svg
-		 :target: https://badge.fury.io/py/pymathics-graph
-.. |Pypi Installs| image:: https://pepy.tech/badge/pymathics-graph
-.. |Supported Python Versions| image:: https://img.shields.io/pypi/pyversions/pymathics-graph.svg
-.. |Packaging status| image:: https://repology.org/badge/vertical-allrepos/pymathics-graph.svg
-			    :target: https://repology.org/project/pymathics-graph/versions
+.. |screenshot| image:: https://github.com/Mathics3/Mathics3-Module-networkx/blob/master/screenshots/BinomialTree-3.png
+.. |Latest Version| image:: https://badge.fury.io/py/Mathics3-Module-networkx.svg
+		 :target: https://badge.fury.io/py/Mathics3-module-networkx
+.. |PyPI Installs| image:: https://pepy.tech/badge/Mathics3-Module-networkx
+.. |Supported Python Versions| image:: https://img.shields.io/pypi/pyversions/Mathics3-Moudle-networkx.svg
+.. |Packaging status| image:: https://repology.org/badge/vertical-allrepos/Mathics3-module-networkx.svg
+			    :target: https://repology.org/project/Mathics3-Module-networkx-/versions
