@@ -1,3 +1,12 @@
+10.0.0
+------
+
+April 19, 2026
+
+Supports Python 3.14. Python 3.10 support dropped. Python 3.10 may still work, but it's not supported.
+
+* Adjust for 10.0.0 API
+
 9.0.0
 -----
 
